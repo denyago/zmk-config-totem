@@ -213,9 +213,5 @@
                                                &none         &none         &none  &trans  &trans   &to 0
             >;
         };
-
-        layer_6 {
-
-        };
     };
 };
