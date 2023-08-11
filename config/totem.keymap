@@ -45,14 +45,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-        tdsnd: tdsnd {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDSND";
-            #binding-cells = <0>;
-            bindings =
-                <&kp C_VOLUME_DOWN>,
-                <&kp K_MUTE>;
-        };
     };
 
     keymap {
@@ -103,10 +95,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-        &trans  &trans  &trans  &trans  &trans        &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                        &trans  &trans  &trans        &trans        &trans         &none
+        &trans  &trans      &trans        &trans             &trans     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+        &trans  &trans      &trans        &trans             &trans           &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&trans  &trans  &trans      &trans        &trans             &trans           &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+                        &kp K_MUTE  &kp C_BRI_DN  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP         &none
             >;
         };
 
@@ -181,10 +173,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans    &trans  &trans
             >;
         };
 
